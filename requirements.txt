@@ -1,3 +1,3 @@
 requests
-python-dxf
+python-dxf==11.0.0
 colorama

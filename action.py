@@ -109,8 +109,8 @@ def get_args():
     # So we need to handle that case
     if "/" in args.repo_name:
         owner, repo_name = args.repo_name.lower().split("/")
-        if owner != args.owner:
-            msg = f"Mismatch in repository: {args.repo_name} and owner:{args.repository_owner}"
+        if owner != args.repo_owner:
+            msg = f"Mismatch in repository: {args.repo_name} and owner:{args.repo_owner}"
             raise ValueError(msg)
         args.repo_name = repo_name
 
