@@ -13,7 +13,7 @@ jobs:
         uses: battila7/get-version-action@v2
 
       - name: Tag Action
-        uses: richardsimko/update-tag@v1
+        uses: richardsimko/update-tag@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
